@@ -1,0 +1,31 @@
+{
+  "name": "cvsFileViewer",
+  "version": "1.0.0",
+  "description": "Viewer of Comma-Separeted Values file",
+  "main": "dist/index.js",
+  "author": "Patrick GIRY",
+  "license": "MIT",
+  "scripts": {
+      "test": "jest",
+      "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+      "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsxi --fix"
+  }, 
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.3.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": ["ts", "tsx", "js"]
+  }
+}
